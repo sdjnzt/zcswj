@@ -3,7 +3,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import {
   DashboardOutlined,
-  SearchOutlined,
   BarChartOutlined,
   UserOutlined,
   AlertOutlined,
