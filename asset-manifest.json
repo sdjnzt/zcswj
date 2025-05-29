@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/zoucheng-water-bureau-bigdata/static/css/main.c1327c3e.css",
+    "main.js": "/zoucheng-water-bureau-bigdata/static/js/main.f12011a5.js",
+    "static/js/213.40279de6.chunk.js": "/zoucheng-water-bureau-bigdata/static/js/213.40279de6.chunk.js",
+    "static/js/667.d802cdc3.chunk.js": "/zoucheng-water-bureau-bigdata/static/js/667.d802cdc3.chunk.js",
+    "index.html": "/zoucheng-water-bureau-bigdata/index.html",
+    "main.c1327c3e.css.map": "/zoucheng-water-bureau-bigdata/static/css/main.c1327c3e.css.map",
+    "main.f12011a5.js.map": "/zoucheng-water-bureau-bigdata/static/js/main.f12011a5.js.map",
+    "213.40279de6.chunk.js.map": "/zoucheng-water-bureau-bigdata/static/js/213.40279de6.chunk.js.map",
+    "667.d802cdc3.chunk.js.map": "/zoucheng-water-bureau-bigdata/static/js/667.d802cdc3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1327c3e.css",
+    "static/js/main.f12011a5.js"
+  ]
+}
