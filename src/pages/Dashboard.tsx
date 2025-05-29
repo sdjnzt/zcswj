@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, Row, Col, Statistic, Progress, Table, Tabs } from 'antd';
-import { FundOutlined, ExperimentOutlined, ToolOutlined, ClusterOutlined, AlertOutlined, DollarOutlined } from '@ant-design/icons';
+import { Card, Row, Col, Statistic, Table, Tabs } from 'antd';
+import { FundOutlined, ExperimentOutlined, ToolOutlined, ClusterOutlined } from '@ant-design/icons';
 import ReactECharts from 'echarts-for-react';
 
 const Dashboard: React.FC = () => {
