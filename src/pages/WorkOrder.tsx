@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Card, Table, Tag, Button, Select, Modal, Form, Input, Space, DatePicker, message, Tabs, Progress, Divider, Row, Col } from 'antd';
-import { PlusOutlined, EyeOutlined, EditOutlined, DownloadOutlined, CheckCircleOutlined, UserSwitchOutlined, CommentOutlined } from '@ant-design/icons';
+import { Card, Table, Tag, Button, Select, Modal, Form, Input, Space, message, Tabs, Divider, Row, Col } from 'antd';
+import { PlusOutlined, EyeOutlined, DownloadOutlined, CheckCircleOutlined, UserSwitchOutlined, CommentOutlined } from '@ant-design/icons';
 import ReactECharts from 'echarts-for-react';
 import dayjs from 'dayjs';
 
 const { Option } = Select;
-const { TabPane } = Tabs;
 
 const mockOrders = [
   { key: 1, code: 'WO20240530001', device: '加压泵A', type: '设备故障', status: '待派单', area: '城区', createUser: 'admin', createTime: '2025-05-30 09:00', currentUser: '', logs: [] },
