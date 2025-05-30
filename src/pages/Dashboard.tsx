@@ -18,14 +18,14 @@ const Dashboard: React.FC = () => {
   const waterQualityTrend = {
     xAxis: {
       type: 'category',
-      data: ['5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'],
+      data: ['5-20', '5-21', '5-22', '5-23', '5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'],
     },
     yAxis: { type: 'value' },
     legend: { data: ['PH值', '溶解氧', '浊度'], top: 40 },
     series: [
-      { name: 'PH值', type: 'line', data: [7.1, 7.2, 7.0, 7.1, 7.2, 7.3, 7.1] },
-      { name: '溶解氧', type: 'line', data: [8.0, 8.1, 7.9, 8.0, 8.1, 8.2, 8.0] },
-      { name: '浊度', type: 'line', data: [0.5, 0.6, 0.4, 0.5, 0.5, 0.6, 0.5] },
+      { name: 'PH值', type: 'line', data: [7.0, 7.1, 7.2, 7.1, 7.1, 7.2, 7.0, 7.1, 7.2, 7.3, 7.1] },
+      { name: '溶解氧', type: 'line', data: [7.9, 8.0, 8.1, 8.0, 8.0, 8.1, 7.9, 8.0, 8.1, 8.2, 8.0] },
+      { name: '浊度', type: 'line', data: [0.6, 0.5, 0.6, 0.5, 0.5, 0.6, 0.4, 0.5, 0.5, 0.6, 0.5] },
     ],
   };
 
@@ -36,10 +36,12 @@ const Dashboard: React.FC = () => {
         type: 'pie',
         radius: '60%',
         data: [
-          { value: 2, name: 'PH异常' },
-          { value: 1, name: '溶解氧异常' },
-          { value: 1, name: '浊度异常' },
-          { value: 3, name: '设备故障' },
+          { value: 4, name: 'PH异常' },
+          { value: 2, name: '溶解氧异常' },
+          { value: 2, name: '浊度异常' },
+          { value: 5, name: '设备故障' },
+          { value: 1, name: '通信异常' },
+          { value: 2, name: '电源异常' },
         ],
       },
     ],
@@ -47,21 +49,21 @@ const Dashboard: React.FC = () => {
 
   // 设备故障趋势
   const deviceFaultTrend = {
-    xAxis: { type: 'category', data: ['5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'] },
+    xAxis: { type: 'category', data: ['5-20', '5-21', '5-22', '5-23', '5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'] },
     yAxis: { type: 'value' },
     series: [
-      { name: '故障数', type: 'bar', data: [1, 2, 1, 3, 2, 1, 2] },
+      { name: '故障数', type: 'bar', data: [1, 0, 2, 1, 1, 2, 1, 3, 2, 1, 2] },
     ],
   };
 
   // 用水量与水费趋势
   const waterUsageTrend = {
     legend: { data: ['用水量', '水费'], top: 40 },
-    xAxis: { type: 'category', data: ['1月', '2月', '3月', '4月', '5月', '6月'] },
+    xAxis: { type: 'category', data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'] },
     yAxis: { type: 'value' },
     series: [
-      { name: '用水量', type: 'line', data: [12000, 13500, 12800, 14000, 13200, 13800] },
-      { name: '水费', type: 'line', data: [36000, 40500, 38400, 42000, 39600, 41400] },
+      { name: '用水量', type: 'line', data: [12000, 13500, 12800, 14000, 13200, 13800, 14500, 14200, 13900, 15000, 14800, 14300] },
+      { name: '水费', type: 'line', data: [36000, 40500, 38400, 42000, 39600, 41400, 43500, 42600, 41700, 45000, 44400, 42900] },
     ],
   };
 
@@ -70,6 +72,11 @@ const Dashboard: React.FC = () => {
     { key: '1', name: '加压泵A', type: '泵站', status: '正常', lastMaintenance: '2025-05-20' },
     { key: '2', name: '流量计B', type: '仪表', status: '故障', lastMaintenance: '2025-05-15' },
     { key: '3', name: '阀门C', type: '阀门', status: '待维护', lastMaintenance: '2025-05-30' },
+    { key: '4', name: '水质传感器D', type: '传感器', status: '正常', lastMaintenance: '2025-05-10' },
+    { key: '5', name: '阀门E', type: '阀门', status: '正常', lastMaintenance: '2025-05-28' },
+    { key: '6', name: '加压泵F', type: '泵站', status: '故障', lastMaintenance: '2025-05-12' },
+    { key: '7', name: '流量计G', type: '仪表', status: '正常', lastMaintenance: '2025-05-18' },
+    { key: '8', name: '水质传感器H', type: '传感器', status: '待维护', lastMaintenance: '2025-05-25' },
   ];
   const deviceOpsColumns = [
     { title: '设备名称', dataIndex: 'name', key: 'name' },
@@ -83,6 +90,11 @@ const Dashboard: React.FC = () => {
     { key: '1', area: '阳光小区', usage: 1200, fee: 3600 },
     { key: '2', area: '工业园区', usage: 8000, fee: 24000 },
     { key: '3', area: '市政公司', usage: 5000, fee: 15000 },
+    { key: '4', area: '滨河花园', usage: 2100, fee: 6300 },
+    { key: '5', area: '高新技术区', usage: 6500, fee: 19500 },
+    { key: '6', area: '水务局办公楼', usage: 900, fee: 2700 },
+    { key: '7', area: '新城区', usage: 3200, fee: 9600 },
+    { key: '8', area: '老城区', usage: 4100, fee: 12300 },
   ];
   const areaUsageColumns = [
     { title: '区域', dataIndex: 'area', key: 'area' },

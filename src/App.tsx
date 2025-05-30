@@ -17,6 +17,11 @@ import WaterQuality from './pages/WaterQuality';
 import PipeNetwork from './pages/PipeNetwork';
 import WaterFeeStats from './pages/WaterFeeStats';
 import DeviceOps from './pages/DeviceOps';
+import Login from './pages/Login';
+import OperationLog from './pages/OperationLog';
+import WorkOrder from './pages/WorkOrder';
+// 通知设置页如有
+// import NotificationSettings from './pages/NotificationSettings';
 
 const { Content } = Layout;
 
@@ -24,6 +29,8 @@ const App: React.FC = () => {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Routes>
+        <Route path="/login" element={<Login />} />
+        {/* <Route path="/notification-settings" element={<NotificationSettings />} /> */}
         <Route path="/big-screen" element={<BigScreen />} />
         <Route path="*" element={
           <Layout>
@@ -47,6 +54,8 @@ const App: React.FC = () => {
                     <Route path="/pipe-network" element={<PipeNetwork />} />
                     <Route path="/water-fee-stats" element={<WaterFeeStats />} />
                     <Route path="/device-ops" element={<DeviceOps />} />
+                    <Route path="/work-order" element={<WorkOrder />} />
+                    <Route path="/operation-log" element={<OperationLog />} />
                   </Routes>
                 </Content>
               </Layout>

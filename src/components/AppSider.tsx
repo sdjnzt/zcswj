@@ -7,6 +7,8 @@ import {
   UserOutlined,
   AlertOutlined,
   BellOutlined,
+  SolutionOutlined,
+  FileTextOutlined,
 } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -60,6 +62,16 @@ const AppSider: React.FC = () => {
       key: '/message-center',
       icon: <BellOutlined />,
       label: '消息中心',
+    },
+    {
+      key: '/work-order',
+      icon: <SolutionOutlined />,
+      label: '工单中心',
+    },
+    {
+      key: '/operation-log',
+      icon: <FileTextOutlined />,
+      label: '操作日志',
     },
   ];
 
