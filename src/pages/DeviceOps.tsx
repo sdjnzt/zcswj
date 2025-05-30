@@ -125,7 +125,7 @@ const statusPieOption = {
 };
 
 const DeviceOps: React.FC = () => {
-  const [stats, setStats] = useState(initialStats);
+  const [stats] = useState(initialStats);
   const [devices, setDevices] = useState(initialDevices);
   const [area, setArea] = useState('全部');
   const [type, setType] = useState('全部');
