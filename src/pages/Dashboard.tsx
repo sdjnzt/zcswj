@@ -18,7 +18,7 @@ const Dashboard: React.FC = () => {
   const waterQualityTrend = {
     xAxis: {
       type: 'category',
-      data: ['5-26', '5-27', '5-28', '5-29', '5-30', '5-31', '6-1'],
+      data: ['5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'],
     },
     yAxis: { type: 'value' },
     legend: { data: ['PH值', '溶解氧', '浊度'], top: 40 },
@@ -47,7 +47,7 @@ const Dashboard: React.FC = () => {
 
   // 设备故障趋势
   const deviceFaultTrend = {
-    xAxis: { type: 'category', data: ['5-26', '5-27', '5-28', '5-29', '5-30', '5-31', '6-1'] },
+    xAxis: { type: 'category', data: ['5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'] },
     yAxis: { type: 'value' },
     series: [
       { name: '故障数', type: 'bar', data: [1, 2, 1, 3, 2, 1, 2] },
@@ -67,9 +67,9 @@ const Dashboard: React.FC = () => {
 
   // 设备运维表格
   const deviceOpsData = [
-    { key: '1', name: '加压泵A', type: '泵站', status: '正常', lastMaintenance: '2024-05-20' },
-    { key: '2', name: '流量计B', type: '仪表', status: '故障', lastMaintenance: '2024-05-15' },
-    { key: '3', name: '阀门C', type: '阀门', status: '待维护', lastMaintenance: '2024-04-30' },
+    { key: '1', name: '加压泵A', type: '泵站', status: '正常', lastMaintenance: '2025-05-20' },
+    { key: '2', name: '流量计B', type: '仪表', status: '故障', lastMaintenance: '2025-05-15' },
+    { key: '3', name: '阀门C', type: '阀门', status: '待维护', lastMaintenance: '2025-05-30' },
   ];
   const deviceOpsColumns = [
     { title: '设备名称', dataIndex: 'name', key: 'name' },

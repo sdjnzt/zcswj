@@ -177,7 +177,7 @@ const BigScreen: React.FC = () => {
     backgroundColor: 'transparent',
     tooltip: { trigger: 'axis', backgroundColor: 'rgba(30,40,90,0.9)', borderColor: '#3f8efc', textStyle: { color: '#fff' } },
     legend: { data: ['PH值', '溶解氧', '浊度'], top: 40, textStyle: { color: '#3f8efc', fontSize: 18, fontWeight: 700 } },
-    xAxis: { type: 'category', data: ['5-26', '5-27', '5-28', '5-29', '5-30', '5-31', '6-1'], axisLabel: { color: '#fff', fontSize: 16 } },
+    xAxis: { type: 'category', data: ['5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'], axisLabel: { color: '#fff', fontSize: 16 } },
     yAxis: { type: 'value', axisLabel: { color: '#fff', fontSize: 14 } },
     series: [
       { name: 'PH值', type: 'line', data: [7.1, 7.2, 7.0, 7.1, 7.2, 7.3, 7.1], color: '#3f8efc' },
@@ -231,7 +231,7 @@ const BigScreen: React.FC = () => {
     backgroundColor: 'transparent',
     tooltip: { trigger: 'axis', backgroundColor: 'rgba(30,40,90,0.9)', borderColor: '#3f8efc', textStyle: { color: '#fff' } },
     legend: { data: ['设备故障数'], top: 40, textStyle: { color: '#3f8efc', fontSize: 18, fontWeight: 700 } },
-    xAxis: { type: 'category', data: ['5-26', '5-27', '5-28', '5-29', '5-30', '5-31', '6-1'], axisLabel: { color: '#fff', fontSize: 16 } },
+    xAxis: { type: 'category', data: ['5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'], axisLabel: { color: '#fff', fontSize: 16 } },
     yAxis: { type: 'value', axisLabel: { color: '#fff', fontSize: 14 } },
     series: [
       { name: '设备故障数', type: 'bar', data: [1, 2, 1, 3, 2, 1, 2], color: '#ff7675' },
@@ -316,7 +316,7 @@ const BigScreen: React.FC = () => {
         transform: isLoaded ? 'translateY(0)' : 'translateY(-20px)',
         transition: 'all 1s ease',
       }}>
-        邹城市水务局大数据平台 - 数字大屏
+         邹城市水务局大数据平台 - 数字大屏
       </div>
       <div style={{ 
         color: '#3f8efc', 

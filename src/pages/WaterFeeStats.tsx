@@ -25,7 +25,7 @@ const lineOption = {
   title: { text: '水费收缴与用水量趋势', left: 'center', top: 10, textStyle: { fontSize: 16 } },
   tooltip: { trigger: 'axis' },
   legend: { data: ['水费收缴', '用水量'], top: 40 },
-  xAxis: { type: 'category', data: ['5-28', '5-29', '5-30', '5-31', '6-1'] },
+  xAxis: { type: 'category', data: ['5-25', '5-26', '5-27', '5-28', '5-29'] },
   yAxis: { type: 'value' },
   series: [
     { name: '水费收缴', type: 'line', data: [200000, 220000, 210000, 230000, 240000] },

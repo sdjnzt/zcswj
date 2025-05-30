@@ -4,11 +4,11 @@ import ReactECharts from 'echarts-for-react';
 
 // mock 监测点地理分布
 const monitorSites = [
-  { name: '南郊水厂', value: [116.980, 35.390], ph: 7.2, oxygen: 8.1, turbidity: 0.5, nh3n: 0.2, status: '正常', time: '2024-06-01 10:00' },
-  { name: '北郊水厂', value: [116.970, 35.420], ph: 7.0, oxygen: 7.9, turbidity: 0.6, nh3n: 0.3, status: '异常', time: '2024-06-01 10:00' },
-  { name: '城区监测点', value: [116.995, 35.405], ph: 7.1, oxygen: 8.0, turbidity: 0.4, nh3n: 0.1, status: '正常', time: '2024-06-01 10:00' },
-  { name: '东部水厂', value: [117.010, 35.400], ph: 7.3, oxygen: 8.2, turbidity: 0.5, nh3n: 0.2, status: '正常', time: '2024-06-01 10:00' },
-  { name: '西部水厂', value: [116.950, 35.395], ph: 6.9, oxygen: 7.8, turbidity: 0.7, nh3n: 0.4, status: '异常', time: '2024-06-01 10:00' },
+  { name: '南郊水厂', value: [116.980, 35.390], ph: 7.2, oxygen: 8.1, turbidity: 0.5, nh3n: 0.2, status: '正常', time: '2025-05-15 10:00' },
+  { name: '北郊水厂', value: [116.970, 35.420], ph: 7.0, oxygen: 7.9, turbidity: 0.6, nh3n: 0.3, status: '异常', time: '2025-05-15 10:00' },
+  { name: '城区监测点', value: [116.995, 35.405], ph: 7.1, oxygen: 8.0, turbidity: 0.4, nh3n: 0.1, status: '正常', time: '2025-05-15 10:00' },
+  { name: '东部水厂', value: [117.010, 35.400], ph: 7.3, oxygen: 8.2, turbidity: 0.5, nh3n: 0.2, status: '正常', time: '2025-05-15 10:00' },
+  { name: '西部水厂', value: [116.950, 35.395], ph: 6.9, oxygen: 7.8, turbidity: 0.7, nh3n: 0.4, status: '异常', time: '2025-05-15 10:00' },
 ];
 
 const indicatorOptions = [
@@ -50,7 +50,7 @@ const WaterQuality: React.FC = () => {
   const trendOption = {
     title: { text: `${indicatorOptions.find(i => i.value === indicator)?.label}趋势`, left: 'center', top: 10, textStyle: { fontSize: 16 } },
     tooltip: { trigger: 'axis' },
-    xAxis: { type: 'category', data: ['5-26', '5-27', '5-28', '5-29', '5-30', '5-31', '6-1'] },
+    xAxis: { type: 'category', data: ['5-24', '5-25', '5-26', '5-27', '5-28', '5-29', '5-30'] },
     yAxis: { type: 'value' },
     series: [
       { name: indicatorOptions.find(i => i.value === indicator)?.label, type: 'line', data: trendData[indicator as keyof typeof trendData], smooth: true, lineStyle: { width: 3 } },

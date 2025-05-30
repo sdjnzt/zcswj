@@ -17,16 +17,16 @@ const columns = [
 ];
 
 const dataSource = [
-  { key: 1, name: '主干管A', pressure: 0.32, flow: 120, status: '正常', time: '2024-06-01 10:00' },
-  { key: 2, name: '支管B', pressure: 0.28, flow: 80, status: '正常', time: '2024-06-01 10:00' },
-  { key: 3, name: '主干管C', pressure: 0.30, flow: 110, status: '异常', time: '2024-06-01 10:00' },
+  { key: 1, name: '主干管A', pressure: 0.32, flow: 120, status: '正常', time: '2025-05-15 10:00' },
+  { key: 2, name: '支管B', pressure: 0.28, flow: 80, status: '正常', time: '2025-05-15 10:00' },
+  { key: 3, name: '主干管C', pressure: 0.30, flow: 110, status: '异常', time: '2025-05-15 10:00' },
 ];
 
 const lineOption = {
   title: { text: '管网压力/流量趋势', left: 'center', top: 10, textStyle: { fontSize: 16 } },
   tooltip: { trigger: 'axis' },
   legend: { data: ['压力', '流量'], top: 40 },
-  xAxis: { type: 'category', data: ['5-28', '5-29', '5-30', '5-31', '6-1'] },
+  xAxis: { type: 'category', data: ['5-25', '5-26', '5-27', '5-28', '5-29'] },
   yAxis: { type: 'value' },
   series: [
     { name: '压力', type: 'line', data: [0.31, 0.32, 0.30, 0.29, 0.32] },

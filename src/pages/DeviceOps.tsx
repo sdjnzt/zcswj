@@ -16,16 +16,16 @@ const columns = [
 ];
 
 const dataSource = [
-  { key: 1, name: '加压泵A', type: '泵站', status: '正常', lastMaintenance: '2024-05-20' },
-  { key: 2, name: '流量计B', type: '仪表', status: '故障', lastMaintenance: '2024-05-15' },
-  { key: 3, name: '阀门C', type: '阀门', status: '待维护', lastMaintenance: '2024-04-30' },
+  { key: 1, name: '加压泵A', type: '泵站', status: '正常', lastMaintenance: '2025-05-20' },
+  { key: 2, name: '流量计B', type: '仪表', status: '故障', lastMaintenance: '2025-05-15' },
+  { key: 3, name: '阀门C', type: '阀门', status: '待维护', lastMaintenance: '2025-05-30' },
 ];
 
 const lineOption = {
   title: { text: '设备故障趋势', left: 'center', top: 10, textStyle: { fontSize: 16 } },
   tooltip: { trigger: 'axis' },
   legend: { data: ['故障数'], top: 40 },
-  xAxis: { type: 'category', data: ['5-28', '5-29', '5-30', '5-31', '6-1'] },
+  xAxis: { type: 'category', data: ['5-26', '5-27', '5-28', '5-29', '5-30'] },
   yAxis: { type: 'value' },
   series: [
     { name: '故障数', type: 'line', data: [2, 3, 4, 3, 4] },
